@@ -1,0 +1,21 @@
+RSI+Mamba
+
+自己训练：
+QB数据集
+超分
+python train.py --task srx2 --img_train_path ../../../../data/Potsdam_Original/train/label/ --img_test_path ../../../../data/Potsdam_Original/test/label/
+
+超分和彩色化：
+python train.py --task color --img_train_path ../../../../data/Potsdam_Original/train/label/ --img_test_path ../../../../data/Potsdam_Original/test/label/
+
+原数据集
+python train.py --task colorx2 --img_train_path ../../../../data/Potsdam_Original/train/label/ --img_test_path ../../../../data/Potsdam_Original/test/label/
+
+
+测试：
+python test.py --task colorx2 --best_pkl_path ./log/pkl/best/best-0024.pkl
+python test.py --task colorx2 --best_pkl_path ./log/pkl/best/best-0020.pkl
+python test.py --task colorx2 --best_pkl_path ./log/pkl/best/best-0016.pkl
+
+python test.py --task colorx2 --best_pkl_path ./save_model/best-0020.pkl
+
