@@ -1,7 +1,5 @@
 # Umamba
-
-# SR_ColorNet
-SR_ColorNet
+Umamba
 
 1.Data preparation
 Taking the Potsdam dataset as an example Potsdam  
