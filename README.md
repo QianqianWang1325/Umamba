@@ -12,15 +12,15 @@ Taking the Potsdam dataset as an example Potsdam
 2.Train
 Put the training/val/test data into the corresponding path in train.py.
 
-For Super-Resolution and Colorization task
+For Super-Resolution and Colorization task：
 
 python train.py --task colorx2 --img_train_path ../../../../data/Potsdam_Original/train/label/ --img_test_path ../../../../data/Potsdam_Original/test/label/
 
-For Super-Resolution task
+For Super-Resolution task：
 
 python train.py --task srx2 --img_train_path ../../../../data/Potsdam_Original/train/label/ --img_test_path ../../../../data/Potsdam_Original/test/label/
 
-For Colorization task
+For Colorization task：
 
 python train.py --task color --img_train_path ../../../../data/Potsdam_Original/train/label/ --img_test_path ../../../../data/Potsdam_Original/test/label/
 
@@ -31,15 +31,15 @@ Put the training/val/test data into the corresponding path in test.py.
 
 The pre trained model generated during the training process follows the ./log_1/pkl/best. 
 
-For Super-Resolution and Colorization task
+For Super-Resolution and Colorization task：
 
 python test.py --task colorx2 --best_pkl_path ./log/pkl/best/best.pkl
 
-For Super-Resolution and Colorization task
+For Super-Resolution and Colorization task：
 
 python test.py --task srx2 --best_pkl_path ./log/pkl/best/best.pkl
 
-For Super-Resolution and Colorization task
+For Super-Resolution and Colorization task：
 
 python test.py --task color --best_pkl_path ./log/pkl/best/best.pkl
 
